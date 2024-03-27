@@ -1,0 +1,35 @@
+<script>
+  (function () {
+
+    var settingsAppAddi = {
+      allySlug: "{{settings.allySlug}}",
+      widgetBorderColor: "{{settings.widgetBorderColor}}",
+      widgetBorderRadius: "{{settings.widgetBorderRadius}}",
+      widgetFontColor: "{{settings.widgetFontColor}}",
+      widgetFontFamily: "{{settings.widgetFontFamily}}",
+      widgetFontSize: "{{settings.widgetFontSize}}",
+      widgetBadgeBackgroundColor: "{{settings.widgetBadgeBackgroundColor}}",
+      widgetInfoBackgroundColor: "{{settings.widgetInfoBackgroundColor}}",
+      widgetMargin: "{{settings.widgetMargin}}",
+      locatedBrazil: "{{settings.locatedBrazil}}",
+      widgetAddiLogoWhite: "{{settings.widgetAddiLogoWhite}}",
+      modalBackgroundColor: "{{settings.modalBackgroundColor}}",
+      modalFontColor: "{{settings.modalFontColor}}",
+      modalPriceColor: "{{settings.modalPriceColor}}",
+      modalBadgeBackgroundColor: "{{settings.modalBadgeBackgroundColor}}",
+      modalBadgeBorderRadius: "{{settings.modalBadgeBorderRadius}}",
+      modalBadgeFontColor: "{{settings.modalBadgeFontColor}}",
+      modalCardColor: "{{settings.modalCardColor}}",
+      modalButtonBorderColor: "{{settings.modalButtonBorderColor}}",
+      modalButtonBorderRadius: "{{settings.modalButtonBorderRadius}}",
+      modalButtonBackgroundColor: "{{settings.modalButtonBackgroundColor}}",
+      modalButtonFontColor: "{{settings.modalButtonFontColor}}"
+    }
+
+    if (settingsAppAddi) {
+      localStorage?.setItem("@settingsAppAddi", JSON.stringify(settingsAppAddi));
+    }
+
+    // Add script here
+  })()
+</script>

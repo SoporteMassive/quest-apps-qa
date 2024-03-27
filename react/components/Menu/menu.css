@@ -1,0 +1,295 @@
+.icon {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'TitilliumWeb-Regular' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.iconMenu:before {
+  content: url(https://quest.vteximg.com.br/arquivos/Icon-Quest-MenuIcon.svg);
+  transform: scale(0.6);
+  display: block;
+}
+.iconMyAccount:before {
+  content: '\e904';
+}
+.iconClose:before {
+  content: url(https://quest.vteximg.com.br/arquivos/Icon-Quest-Close-Btn-White.svg);
+  transform: scale(0.7);
+  display: block;
+}
+.iconArrowRight:before {
+  content: url(https://almacenesbrissa.vteximg.com.br/arquivos/Arrow-Icon.svg);
+}
+.iconArrowLeft:before {
+  content: url(https://almacenesbrissa.vteximg.com.br/arquivos/Arrow-Left-Icon.svg);
+}
+
+.JCBrand:before {
+  color: #000;
+}
+@media screen and (min-width: 768px) {
+  .JCBrand:before {
+    color: #fff;
+    font-size: 50px;
+  }
+}
+
+.overlayMenu {
+  background: #fff;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all ease-in-out 0.2s;
+  z-index: 1;
+}
+@media screen and (min-width: 768px) {
+  .overlayMenu {
+    background: rgba(29, 29, 27, 0.25);
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.wrapper {
+  margin: 0;
+}
+
+.button {
+  color: #fff;
+  /* padding: .75rem; */
+}
+@media screen and (min-width: 768px) {
+  .button {
+    border-right: 1px solid #666;
+    color: #fff;
+    margin: 0 18px 0 20px;
+    padding: 6px 18px 6px 5px;
+  }
+}
+
+.button__icon {
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+  color: #000;
+  transition: all 0.2s ease-in-out;
+}
+@media screen and (min-width: 768px) {
+  .button__icon {
+    color: #666666;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .button__icon:hover {
+    color: #fff;
+  }
+}
+
+.drawer {
+  background-color: #fff;
+  top: 0;
+  left: -100%;
+  height: 100vh;
+  position: fixed;
+  width: 100%;
+  transition: all 0.2s ease-in-out;
+}
+@media screen and (min-width: 768px) {
+  .drawer {
+    background-color: #1d1d1b;
+    width: 400px;
+  }
+}
+.drawer__isOpen {
+  left: 0;
+  transition: all 0.4s ease-in-out;
+}
+.drawer__isOpen .overlayMenu {
+  opacity: 1;
+  visibility: visible;
+}
+.wrapperInner {
+  height: 100vh;
+  position: relative;
+  z-index: 2;
+}
+
+.headerMenu {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.headerBrand {
+  color: #fff;
+  font-size: 64px;
+}
+.closeMenu {
+  border: none;
+  background: transparent;
+  color: #000;
+  cursor: pointer;
+  font-size: 22px;
+  right: 1%;
+  padding: 0;
+  position: absolute;
+  top: 2.5%;
+}
+@media screen and (min-width: 768px) {
+  .closeMenu {
+    color: #fff;
+  }
+}
+
+.sectionMenu {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+.sectionMenu :global(.vtex__icon-spinner) {
+  display: flex;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.navBar {
+  margin: 0;
+  padding: 0;
+}
+
+.menuItem {
+  border-bottom: 1px solid #e5e5e5;
+  padding: 0 28px 0 14px;
+}
+@media screen and (min-width: 768px) {
+  .menuItem {
+    border-bottom: 1px solid #fff;
+  }
+}
+.menuItem:last-child {
+  border-bottom: 1px solid #e5e5e5;
+}
+@media screen and (min-width: 768px) {
+  .menuItem:last-child {
+    border-bottom: 1px solid #fff;
+  }
+}
+.menuItemBack {
+  background: #d9d9d9;
+  padding: 0 28px 0 14px;
+  position: relative;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .menuItemBack {
+    background: transparent;
+  }
+}
+
+.itemLink,
+.buttonDropdown {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: block;
+  color: #666666;
+  font-size: 14px;
+  font-weight: 600;
+  position: relative;
+  padding: 10px 14px;
+  text-align: left;
+  width: 100%;
+  font-family: 'TitilliumWeb-Regular' !important;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 768px) {
+  .buttonDropdown {
+    color: #fff;
+  }
+}
+.buttonDropdown .icon {
+  font-size: 10px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@media screen and (min-width: 768px) {
+  .itemLink {
+    color: #fff;
+  }
+}
+.itemLinkBack {
+  font-family: 'TitilliumWeb-Regular' !important;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #536271;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px 0;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .itemLinkBack {
+    color: #fff;
+    padding: 10px 0;
+  }
+}
+.itemLinkBack .iconArrowLeft {
+  color: #666;
+  font-size: 10px;
+  position: absolute;
+  left: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.dropdown {
+  background-color: #fff;
+  padding: 0;
+  margin: 0;
+  height: calc(100vh - 177px);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  display: none;
+  z-index: 2;
+}
+@media screen and (min-width: 768px) {
+  .dropdown {
+    background-color: #1d1d1b;
+  }
+}
+.openDropdown {
+  display: block;
+  overflow-y: scroll;
+}

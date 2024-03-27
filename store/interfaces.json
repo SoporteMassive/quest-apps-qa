@@ -1,0 +1,58 @@
+{
+  "app-menu": {
+    "component": "MenuApp",
+    "composition": "children"
+  },
+  "custom-metas-injection": {
+    "component": "CustomMetasInjection",
+    "content": {
+      "$ref": "#/definitions/CustomMetasInjection"
+    }
+  },
+  "search-mobile-bar-custom": {
+    "component": "SearchBar"
+  },
+  "button-view-more-seo": {
+    "component": "ViewMore"
+  },
+  "button-view-more-seo-2": {
+    "component": "ViewMore2"
+  },
+  "shelf-promotions": {
+    "component": "ShelfPromotions",
+    "content": {
+      "$ref": "#/definitions/ShelfPromotions"
+    }
+  },
+  "store-custom-location": {
+    "component": "StoreLocation"
+  },
+  "custom-newsletter-form": {
+    "component": "NewsletterForm",
+    "content": {
+      "$ref": "#/definitions/NewsletterForm"
+    }
+  },
+  "custom-freeshipping": {
+		"component": "Freeshipping"
+	},
+  "addi-button": {
+    "component": "AddiInfos"
+  },
+  "seo-context": {
+    "component": "SeoContext",
+    "composition": "children"
+  },
+  "seo-long-text": {
+    "component": "SeoLongText"
+  },
+  "seo-paragraph": {
+    "component": "SeoParagraph"
+  },
+  "seo-links": {
+    "component": "SeoLinks"
+  },
+  "cuidados": {
+    "component": "HtmlSpecification"
+  }
+}

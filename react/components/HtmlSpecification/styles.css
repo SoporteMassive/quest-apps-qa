@@ -1,0 +1,19 @@
+.SpecificationContainer{
+  padding: 10px 0;
+}
+
+.SpecificationTitle{
+  font-weight: bold;
+  font-family: "TitilliumWeb-Regular";
+  font-size: 1rem;
+  line-height: 1.15;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.SpecificationContent{
+  font-family: "TitilliumWeb-Regular";
+  font-size: 1rem;
+  line-height: 1.15;
+  color: rgb(24, 24, 31);
+}

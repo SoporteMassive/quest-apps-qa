@@ -1,0 +1,14 @@
+query getSEOData($categoryId: ID!) {
+  getSEOData(categoryId: $categoryId) {
+    mainTitle
+    mainParagraph
+    col1Title
+    col1Paragraph
+    col2Title
+    col2Paragraph
+    col3Title
+    col3Paragraph
+    linksTitle
+    links
+  }
+}

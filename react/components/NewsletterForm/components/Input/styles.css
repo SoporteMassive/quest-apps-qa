@@ -1,0 +1,65 @@
+.containerInputElement {
+}
+.inputElement {
+  height: 100%;
+  width: 95%;
+  outline: 0;
+  border: solid 1px #353535;
+  font-style: initial;
+  padding-left: 10px;
+  height: 42px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #353535;
+  border-radius: 25px;
+  font-family: 'TitilliumWeb-Regular';
+  background: rgba(255, 255, 255, 0.8);
+}
+.labelName {
+  font-family: 'TitilliumWeb-Regular';
+  font-size: 15px;
+  letter-spacing: 1.5px;
+  text-align: center;
+  color: #000;
+  font-weight: 600;
+  min-height: 20px;
+  text-transform: uppercase;
+}
+.labelError {
+  font-size: 14px;
+  color: red;
+  max-height: 0;
+  font-style: italic;
+  font-weight: bold;
+  transition: all 0.2s;
+}
+.showError {
+  margin-top: 5px;
+  max-height: 50px;
+}
+@media screen and (max-width: 1024px) {
+  .inputElement {
+    height: 40px;
+    width: 100%;
+    font-size: 16px;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .labelName {
+    font-size: 14px;
+    letter-spacing: 0.7px;
+    text-align: start;
+    font-weight: 400;
+    text-transform: unset;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .labelName {
+    font-size: 11px;
+  }
+  .inputElement::placeholder {
+    font-size: 11px;
+    font-family: 'TitilliumWeb-Regular';
+  }
+}

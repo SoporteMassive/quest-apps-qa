@@ -1,0 +1,86 @@
+{
+  "definitions": {
+    "CustomMetasInjection": {
+      "type": "object",
+      "title": "Custom Meta Tags",
+      "properties": {
+        "metas": {
+          "type": "array",
+          "title": "Meta Tags",
+          "items": {
+            "properties": {
+              "property": {
+                "$ref": "app:vtex.native-types#/definitions/text",
+                "default": "",
+                "title": "Property"
+              },
+              "name": {
+                "$ref": "app:vtex.native-types#/definitions/text",
+                "default": "",
+                "title": "Name"
+              },
+              "content": {
+                "$ref": "app:vtex.native-types#/definitions/text",
+                "default": "",
+                "title": "Content"
+              }
+            }
+          }
+        }
+      }
+    },
+    "ShelfPromotions": {
+      "type": "object",
+      "title": "Promociones",
+      "properties": {
+        "promotions": {
+          "title": "Listado Promociones",
+          "type": "array",
+          "items": {
+            "properties": {
+              "title": {
+                "title": "Nombre de la Promoción",
+                "$ref": "app:vtex.native-types#/definitions/text",
+                "default": ""
+              },
+              "url": {
+                "title": "URL de la Promoción",
+                "$ref": "app:vtex.native-types#/definitions/url",
+                "default": ""
+              },
+              "image": {
+                "title": "Imagen de la Promoción",
+                "$ref": "app:vtex.native-types#/definitions/url",
+                "default": "",
+                "widget": {
+                  "ui:widget": "image-uploader"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "NewsletterForm": {
+      "type": "object",
+      "title": "Newsletter Form",
+      "properties": {
+        "__terms": {
+          "$ref": "app:vtex.native-types#/definitions/richText",
+          "default": "He podido leer y entender la información sobre el uso de mis datos personales explicada en la política de privacidad y acepto recibir comunicaciones personalizadas de Quest a través del email y otros medios.",
+          "title": "Términos y condiciones"
+        },
+        "__textLink": {
+          "$ref": "app:vtex.native-types#/definitions/richText",
+          "default": "Te informamos que según la ley 2300 de 2023 los datos personales entregados serán agregados a nuestra base de datos general para fines comerciales",
+          "title": "Texto 2"
+        },
+        "__btn": {
+          "$ref": "app:vtex.native-types#/definitions/richText",
+          "default": "Registrarme a Newsletter",
+          "title": "Texto Botón"
+        }
+      }
+    }
+  }
+}

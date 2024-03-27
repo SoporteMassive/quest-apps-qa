@@ -1,0 +1,248 @@
+{
+  "vendor": "questpruebasqa",
+  "name": "quest-apps",
+  "version": "0.0.1",
+  "title": "quest-apps",
+  "description": "mini apps quest",
+  "builders": {
+    "react": "3.x",
+    "messages": "1.x",
+    "docs": "0.x",
+    "store": "0.x",
+    "styles": "2.x",
+    "pixel": "0.x",
+    "node": "6.x",
+    "graphql": "1.x"
+  },
+  "dependencies": {
+    "vtex.styleguide": "9.x",
+    "vtex.native-types": "0.x",
+    "vtex.store-image": "0.x",
+    "vtex.css-handles": "1.x",
+    "vtex.order-manager": "0.x",
+    "vtex.formatted-price": "0.x",
+    "vtex.product-context": "0.x",
+    "vtex.render-runtime": "8.x",
+    "vtex.pixel-interfaces": "1.x",
+    "vtex.search-page-context": "0.x"
+  },
+  "settingsSchema": {
+    "title": "Store location",
+    "type": "object",
+    "properties": {
+      "google": {
+        "title": "Google Key",
+        "description": "Enter your google key",
+        "type": "string"
+      },
+      "allySlug": {
+        "title": "Ally Slug",
+        "description": "Enter your ally-slug",
+        "type": "string",
+        "access": "public",
+        "default": "addibr"
+      },
+      "locatedBrazil": {
+        "title": "Store Country location",
+        "description": "Select the acronym of your country on the list below",
+        "type": "string",
+        "enum": [
+          "br",
+          "co"
+        ],
+        "access": "public",
+        "default": "br"
+      },
+      "widgetBorderColor": {
+        "title": "Widget Border Color",
+        "description": "Enter your Widget Border Color",
+        "type": "string",
+        "access": "public",
+        "default": "#565656"
+      },
+      "widgetBorderRadius": {
+        "title": "Widget Border Radius",
+        "description": "Enter your Widget Border Radius",
+        "type": "string",
+        "access": "public",
+        "default": "8px"
+      },
+      "widgetFontColor": {
+        "title": "Widget Font Color",
+        "description": "Enter your Widget Font Color",
+        "type": "string",
+        "access": "public",
+        "default": "#787878"
+      },
+      "widgetFontFamily": {
+        "title": "Widget Font Family",
+        "description": "Enter your Font Family",
+        "type": "string",
+        "access": "public",
+        "default": "'Roboto', sans-serif"
+      },
+      "widgetFontSize": {
+        "title": "Widget Font Size",
+        "description": "Enter your Font Size",
+        "type": "string",
+        "access": "public",
+        "default": "14px"
+      },
+      "widgetBadgeBackgroundColor": {
+        "title": "Widget Badge Background Color",
+        "description": "Enter your Badge Background Color",
+        "type": "string",
+        "access": "public",
+        "default": "black"
+      },
+      "widgetInfoBackgroundColor": {
+        "title": "Widget Info Background Color",
+        "description": "Enter your Info Background Color",
+        "type": "string",
+        "access": "public",
+        "default": "white"
+      },
+      "widgetMargin": {
+        "title": "Widget Margin",
+        "description": "Enter your Margin",
+        "type": "string",
+        "access": "public",
+        "default": "10px 0"
+      },
+      "widgetAddiLogoWhite": {
+        "title": "Widget Addi Logo White",
+        "description": "Widget Addi Logo White ?",
+        "type": "string",
+        "access": "public",
+        "default": "true"
+      },
+      "modalBackgroundColor": {
+        "title": "Modal Background Color",
+        "description": "Enter your Modal Background Color",
+        "type": "string",
+        "access": "public",
+        "default": "white"
+      },
+      "modalFontColor": {
+        "title": "Modal Font Color",
+        "description": "Enter your Modal Font Color",
+        "type": "string",
+        "access": "public",
+        "default": "#787878"
+      },
+      "modalPriceColor": {
+        "title": "Modal Price Color",
+        "description": "Enter your Modal Price Color",
+        "type": "string",
+        "access": "public",
+        "default": "#00377D"
+      },
+      "modalBadgeBackgroundColor": {
+        "title": "Modal Badge Background Color",
+        "description": "Enter your Modal Badge Background Color",
+        "type": "string",
+        "access": "public",
+        "default": "black"
+      },
+      "modalBadgeBorderRadius": {
+        "title": "Modal Badge Border Radius",
+        "description": "Enter your Modal Badge Border Radius",
+        "type": "string",
+        "access": "public",
+        "default": "20px"
+      },
+      "modalBadgeFontColor": {
+        "title": "Modal Badge Font Color",
+        "description": "Enter your Modal Badge Font Color",
+        "type": "string",
+        "access": "public",
+        "default": "white"
+      },
+      "modalCardColor": {
+        "title": "Modal Card Color",
+        "description": "Enter your Modal Card Color",
+        "type": "string",
+        "access": "public",
+        "default": "#FAFAFA"
+      },
+      "modalButtonBorderColor": {
+        "title": "Modal Button Border Color",
+        "description": "Enter your Modal Button Border Color",
+        "type": "string",
+        "access": "public",
+        "default": "#00C8FF"
+      },
+      "modalButtonBorderRadius": {
+        "title": "Modal Button Border Radius",
+        "description": "Enter your Modal Button Border Radius",
+        "type": "string",
+        "access": "public",
+        "default": "20px"
+      },
+      "modalButtonBackgroundColor": {
+        "title": "Modal Button Background Color",
+        "description": "Enter your Modal Button Background Color",
+        "type": "string",
+        "access": "public",
+        "default": "white"
+      },
+      "modalButtonFontColor": {
+        "title": "Modal Button Font Color",
+        "description": "Enter your Modal Button Font Color",
+        "type": "string",
+        "access": "public",
+        "default": "#00C8FF"
+      }
+    }
+  },
+  "registries": [
+    "smartcheckout"
+  ],
+  "policies": [
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "api.vtex.com",
+        "path": "/api/*"
+      }
+    },
+    {
+      "name": "ADMIN_DS"
+    },
+    {
+      "name": "ADMIN_CRM"
+    },
+    {
+      "name": "POWER_USER_CRM"
+    },
+    {
+      "name": "POWER_USER_DS"
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "portal.vtexcommercestable.com.br",
+        "path": "/api/*"
+      }
+    },
+    {
+      "name": "colossus-fire-event"
+    },
+    {
+      "name": "colossus-write-logs"
+    },
+    {
+      "name": "graphql-query"
+    },
+    {
+      "name": "read-workspace-apps-assets"
+    },
+    {
+      "name": "update-app-settings"
+    },
+    {
+      "name": "install-apps"
+    }
+  ],
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

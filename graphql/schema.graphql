@@ -1,0 +1,20 @@
+type SEOData {
+  mainTitle: String
+  mainParagraph: String
+  col1Title: String
+  col1Paragraph: String
+  col2Title: String
+  col2Paragraph: String
+  col3Title: String
+  col3Paragraph: String
+  linksTitle: String
+  links: String
+}
+
+type Query {
+  getSEOData(categoryId: ID!): SEOData
+}
+
+type Mutation {
+  updateSEOData(file: Upload!): Boolean!
+}
