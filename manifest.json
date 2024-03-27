@@ -1,7 +1,7 @@
 {
   "vendor": "questpruebasqa",
   "name": "quest-apps",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "title": "quest-apps",
   "description": "mini apps quest",
   "builders": {
@@ -46,10 +46,7 @@
         "title": "Store Country location",
         "description": "Select the acronym of your country on the list below",
         "type": "string",
-        "enum": [
-          "br",
-          "co"
-        ],
+        "enum": ["br", "co"],
         "access": "public",
         "default": "br"
       },
@@ -195,9 +192,7 @@
       }
     }
   },
-  "registries": [
-    "smartcheckout"
-  ],
+  "registries": ["smartcheckout"],
   "policies": [
     {
       "name": "outbound-access",
