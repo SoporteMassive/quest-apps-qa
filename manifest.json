@@ -1,7 +1,7 @@
 {
   "vendor": "questpruebasqa",
   "name": "quest-apps",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "title": "quest-apps",
   "description": "mini apps quest",
   "builders": {
